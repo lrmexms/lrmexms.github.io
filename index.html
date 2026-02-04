@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title class='name'></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div id='game'>
+        <div id='game-box'>
+            <h2 id='sats-counter-0'>
+                <span id='sat-or-btc'></span>&nbsp;
+                <span id='sats-counter'>0</span></h2>
+                <button id='server-miner-button'>
+                    <div class='server-miner-session'><div class='server-miner-session-circle-green'></div><div class='server-miner-session-circle-blue'></div><div class='server-miner-session-circle-red'></div><div class='server-miner-session-bar'></div></div>
+                    <div class='server-miner-session'><div class='server-miner-session-circle-green'></div><div class='server-miner-session-circle-blue'></div><div class='server-miner-session-circle-red'></div><div class='server-miner-session-bar'></div></div>
+                    <div class='server-miner-session'><div class='server-miner-session-circle-green'></div><div class='server-miner-session-circle-blue'></div><div class='server-miner-session-circle-red'></div><div class='server-miner-session-bar'></div></div>
+                    <div class='server-miner-session'><div class='server-miner-session-circle-green'></div><div class='server-miner-session-circle-blue'></div><div class='server-miner-session-circle-red'></div><div class='server-miner-session-bar'></div></div>
+                </button>
+            <div class='cem'>
+                <p id='sats-per-click-0'>SATs per click:&nbsp;<span id='sats-per-click'>1</span></p>
+                <p id='sats-in-auto-mine-0'>SATs in auto mine:&nbsp;<span id='sats-in-auto-mine'>1</span></p>
+                <p id='game-timer-0'>Time:&nbsp;<span id='game-timer'>1</span></p>
+            </div>
+            <div>
+                <button class='button-no-end' id='more-sats-per-click-button'>More SATs per click (+1):&nbsp;<span id='more-sats-per-click-price'>1</span>&nbsp;SATs</button>
+                <button class='button-no-end' id='more-sats-in-auto-mine-button'>More SATs in auto mine (+10):&nbsp;<span id='more-sats-in-auto-mine-price'>1</span>&nbsp;SATs</button>
+                <button class='button-no-end' id='game-more-button'>More</button>
+            </div>
+        </div>
+    </div>
+    <div id='home-menu'>
+        <div id='home-menu-home-menu'>
+            <h1 class='name'></h1>
+            <div>
+                <button class='button-no-end' id='login-button'>Login</button>
+                <button class='button-no-end' id='create-account-button'>Create Account</button>
+                <button class='button-no-end' id='game-button-home-menu'>Game</button>
+            </div>
+        </div>
+    </div>
+    <div id='login-menu'>
+        <div id='login-menu-login-menu'>
+            <div>
+                <h1 class='name'></h1>
+                <h1>Login</h1>
+            </div>
+            <div>
+                <input class="input-no-end" id='user-input-login-menu' type='text' placeholder='user'>
+                <input class="input-no-end" id='password-input-login-menu' type='password' placeholder='Password'>
+                <button class='button-no-end' id='login-button-login-menu'>Login</button>
+                <button class='button-no-end' id='create-account-button-login-menu'>Create Account</button>
+                <button class='button-no-end' id='game-button-login-menu'>Game</button>
+            </div>
+        </div>
+    </div>
+    <div id='create-account-menu'>
+        <div id='create-account-menu-create-account-menu'>
+            <div>
+                <h1 class='name'></h1>
+                <h1>Create Account</h1>
+            </div>
+            <div>
+                <input class="input-no-end" id='email-input-create-account-menu' type='text' placeholder='User'>
+                <input class="input-no-end" id='name-input-create-account-menu' type='text' placeholder='Name'>
+                <input class="input-no-end" id='email-input-create-account-menu' type='text' placeholder='example@email.com'>
+                <input class="input-no-end" id='password-input-create-account-menu' type='password' placeholder='Password'>
+                <input class="input-no-end" id='confirm-password-input-create-account-menu' type='password' placeholder='Confirm Password'>         
+                <button class='button-no-end' id='create-account-button-create-account-menu'>Create Account</button>
+                <button class='button-no-end' id='login-button-create-account-menu'>Login</button>
+                <button class='button-no-end' id='game-button-create-account-menu'>Game</button>
+            </div>
+        </div>
+    </div>
+    <div id='end-page'>
+        <nav id="menu">
+            <button><a href="index.html"><div class="name"></div> <i class="bi bi-house"></i></a></button>
+            <ul>
+                <li><a href="">Twitter  <i class="bi bi-twitter-x"></i></a></li>
+                <li><a href="">Instagram <i class="bi bi-instagram"></i></a></li>
+                <li><a href="">Github <i class="bi bi-github"></i></a></li>
+            </ul>
+            <button id="user-button-menu">
+                <div id="user-display-menu"></div>
+                <i class="bi bi-person-fill"></i>
+            </button>
+        </nav>
+        <div id="end-content">
+            
+        </div>
+        <div id="account-menu-background">
+            <div id="account-menu">
+                <div id="align-x-account-menu"><button id="x-button-account-menu"><i class="bi bi-x-lg"></i></button></div>
+                <h1>Account:</h1>
+                <div id="display-account-menu">
+                    <div class="content-display-account-menu-0">User:&nbsp;<div class="content-display-account-menu" id="user-display-account-menu"></div></div>
+                    <div class="content-display-account-menu-0">Name:&nbsp;<div class="content-display-account-menu" id="name-display-account-menu"></div></div>
+                    <div class="content-display-account-menu-0">Email:&nbsp;<div class="content-display-account-menu" id="email-display-account-menu"></div></div>
+                    <button id='copy-button-sha256-user'>Copy: SHA256(user)</button>
+                    <button id='copy-button-sha256-password'>Copy: SHA256(password)</button>
+                </div>
+                <button id='game-button-account-menu'>To Game</button>
+            </div>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>

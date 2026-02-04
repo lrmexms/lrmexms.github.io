@@ -1,0 +1,299 @@
+:root {
+    --color: #ffffff;
+    --color1: #3c3c3c;
+    --color2: #1c2c5c;
+    --background: rgba(0, 0, 0, 0.3);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    color: var(--color);
+    background-image: linear-gradient(
+    135deg,
+    var(--color1),
+    var(--color2)
+    );
+    font-family: PublicSans, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+div#game,
+div#home-menu,
+div#login-menu,
+div#create-account-menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color);
+    background-color: var(--background);
+}
+
+div#game-box,
+div#home-menu-home-menu,
+div#login-menu-login-menu,
+div#create-account-menu-create-account-menu {
+    border: 1px solid var(--color);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div#game-box,
+div#home-menu-home-menu,
+div#login-menu-login-menu,
+div#create-account-menu-create-account-menu {
+    width: 270px;
+    height: 480px;
+}
+
+input {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid var(--color);
+    border-radius: 10px;
+    background-color: var(--background);
+    color: var(--color);
+    text-align: center;
+}
+
+.input-no-end {
+    width: 240px;
+}
+
+.input-no-end:hover {
+    width: 250px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid var(--color);
+    border-radius: 10px;
+    background-color: var(--background);
+    color: var(--color);
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-no-end {
+    width: 260px;
+}
+
+.button-no-end:hover {
+    width: 270px;
+}
+
+button#server-miner-button{
+    margin: 0px;
+    padding: 0px;
+    width: 250px;
+    height: 190px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    border: none;
+}
+
+.server-miner-session {
+    width: 230px;
+    height: 30px;
+    background-color: rgb(75, 75, 75);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.server-miner-session-circle-red {
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: rgb(255, 100, 100);
+}
+
+.server-miner-session-circle-green {
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: rgb(100, 255, 100);
+}
+
+.server-miner-session-circle-blue {
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: rgb(100, 100, 255);
+}
+
+.server-miner-session-bar {
+    width: 100%;
+    height: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: rgb(50, 50, 50);
+}
+
+h2#sats-counter-0,
+p#sats-per-click-0,
+p#sats-in-auto-mine-0,
+p#game-timer-0 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.cem {
+    width: 100%;
+}
+
+div#end-page {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--color);
+    background-color: var(--background);
+}
+
+nav#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid var(--color);
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+nav#menu button, nav#menu button a{
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--color);
+    border-radius: 10px;
+}
+
+nav#menu ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+nav#menu ul li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--color);
+    border-radius: 10px;
+}
+
+
+div#end-content {
+    height: calc(100vh - 51px);
+    width: 100%;
+}
+
+div#account-menu-background {
+    background: var(--background);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+div#account-menu {
+    border: 1px solid var(--color);
+    background: var(--background);
+    width: 60vw;
+    height: 80vh;
+    border-radius: 25px;
+    padding: 1vw;
+
+    display: flex;
+    flex-direction: column; 
+}
+
+
+div#align-x-account-menu {
+    display: flex;
+    justify-content: end;
+}
+
+#display-account-menu {
+    flex: 1;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.content-display-account-menu-0{
+    display: flex;
+    flex-direction: row;
+    margin: 1vw;
+}
+
+.content-display-account-menu{
+    width: 100%;    
+    background: var(--background);
+    border-radius: 3vw;
+    padding: 0vw 1vw;
+    text-align: left;
+}
