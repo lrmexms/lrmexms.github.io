@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../image/icon.png">
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="../index.html">Home / Início <i class="bi bi-house"></i></a></li>
+            <li><a class="twitter-button-menu">Twitter <i class="bi bi-twitter-x"></i></a></li>
+            <li><a class="instagram-button-menu">Instagram <i class="bi bi-instagram"></i></a></li>
+            <li><a class="github-button-menu">Github <i class="bi bi-github"></i></a></li>
+        </ul>
+    </nav>
+        <div id="content">
+            <div id="game-box">
+                <h2 id="sats-counter-0">
+                    <span id="sat-or-btc"></span>&nbsp;
+                    <span id="sats-counter">0</span></h2>
+                    <button id="server-miner-button">
+                        <div class="server-miner-session"><div class="server-miner-session-circle-green"></div><div class="server-miner-session-circle-blue"></div><div class="server-miner-session-circle-red"></div><div class="server-miner-session-bar"></div></div>
+                        <div class="server-miner-session"><div class="server-miner-session-circle-green"></div><div class="server-miner-session-circle-blue"></div><div class="server-miner-session-circle-red"></div><div class="server-miner-session-bar"></div></div>
+                        <div class="server-miner-session"><div class="server-miner-session-circle-green"></div><div class="server-miner-session-circle-blue"></div><div class="server-miner-session-circle-red"></div><div class="server-miner-session-bar"></div></div>
+                        <div class="server-miner-session"><div class="server-miner-session-circle-green"></div><div class="server-miner-session-circle-blue"></div><div class="server-miner-session-circle-red"></div><div class="server-miner-session-bar"></div></div>
+                    </button>
+                <div class="cem">
+                    <p id="sats-per-click-0">SATs per click:&nbsp;<span id="sats-per-click">1</span></p>
+                    <p id="sats-in-auto-mine-0">SATs in auto mine:&nbsp;<span id="sats-in-auto-mine">1</span></p>
+                    <p id="game-timer-0">Time:&nbsp;<span id="game-timer">1</span></p>
+                </div>
+                <div>
+                    <button class="button-game" id="more-sats-per-click-button">More SATs per click (+1):&nbsp;<span id="more-sats-per-click-price">1</span>&nbsp;SATs</button>
+                    <button class="button-game" id="more-sats-in-auto-mine-button">More SATs in auto mine (+10):&nbsp;<span id="more-sats-in-auto-mine-price">1</span>&nbsp;SATs</button>
+                </div>
+            </div>
+        </div>
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,181 @@
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+    font-family: Consolas, "Courier New", monospace;
+    text-transform: lowercase;
+}
+
+div#game-box {
+    width: 270px;
+    height: 480px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    text-align: center;
+    border-radius: 10px;
+
+    background-color: #050807;
+    color: #b6ffd9;
+    border: 1px solid #1aff6a;
+}
+
+button#server-miner-button {
+    width: 250px;
+    height: 190px;
+
+    margin: 0;
+    padding: 0;
+
+    border-radius: 10px;
+    border: none;
+
+    background-color: #0b120f;
+}
+
+.server-miner-session {
+    width: 230px;
+    height: 30px;
+
+    margin: 5px;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 10px;
+}
+
+.server-miner-session-bar {
+    width: 100%;
+    height: 10px;
+
+    margin: 2px;
+    border-radius: 5px;
+
+    background-color: #0f3d25;
+}
+
+/* Session circles */
+.server-miner-session-circle-red,
+.server-miner-session-circle-green,
+.server-miner-session-circle-blue {
+    width: 10px;
+    height: 10px;
+
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.server-miner-session-circle-red {
+    background-color: #007a3d;
+}
+
+.server-miner-session-circle-green {
+    background-color: #00ff66;
+}
+
+.server-miner-session-circle-blue {
+    background-color: #1aff6a;
+}
+
+h2#sats-counter-0,
+p#sats-per-click-0,
+p#sats-in-auto-mine-0,
+p#game-timer-0 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+button,
+.button-game {
+    margin: 5px;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: 1px solid #1aff6a;
+
+    background-color: #0b120f;
+    color: #b6ffd9;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00ff66;
+    color: #050807;
+}
+
+.button-game {
+    width: 260px;
+}
+
+nav#menu {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 10px;
+    box-sizing: border-box;
+
+    background-color: black;
+    font-family: PublicSans, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+nav#menu ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+nav#menu ul li a,
+nav#menu button a {
+    all: unset;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 5px 10px;
+    border-radius: 10px;
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #1aff6a;
+}
+
+div#content {
+    width: 100vw;
+    height: calc(100vh - 50px);
+
+    background-color: green;
+}
+
+div#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+    color: white;
+}

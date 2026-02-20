@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Page</title>
+    <style>
+:root {
+    --textColor: #ffffff;
+    --backgroundColor: #000000;
+}
+
+html, body {
+    color: var(--textColor);
+    background-color: var(--backgroundColor);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div#link-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 100vh;
+}
+
+a {
+    color: var(--textColor);
+    font-size: 3vh;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div id="link-box">
+    </div>
+<script>
+window.onload = () => {
+    const params = new URLSearchParams(window.location.search);
+    const box = document.getElementById('link-box')
+    const name = params.get("name");
+    
+    const textColor = params.get("text-color") || "#000000";
+    const backgroundColor = params.get("background-color") || "#ffffff";
+
+    let link1 = ''
+    let link2 = ''
+    let link3 = ''
+    let link4 = ''
+    let link5 = ''
+    let link6 = ''
+    let link7 = ''
+    let link8 = ''
+    let link9 = ''
+    let link10 = ''
+
+    const links = {
+        text1: params.get("linkText1"),
+        url1: params.get("linkUrl1"),
+        
+        text2: params.get("linkText2"),
+        url2: params.get("linkUrl2"),
+        
+        text3: params.get("linkText3"),
+        url3: params.get("linkUrl3"),
+
+        text4: params.get("linkText4"),
+        url4: params.get("linkUrl4"),
+
+        text5: params.get("linkText5"),
+        url5: params.get("linkUrl5"),
+
+        text6: params.get("linkText6"),
+        url6: params.get("linkUrl6"),
+
+        text7: params.get("linkText7"),
+        url7: params.get("linkUrl7"),
+
+        text8: params.get("linkText8"),
+        url8: params.get("linkUrl8"),
+
+        text9: params.get("linkText9"),
+        url9: params.get("linkUrl9"),
+
+        text10: params.get("linkText10"),
+        url10: params.get("linkUrl10"),
+    }
+
+    if (links.text1 == 'erroNãoBote' || links.url1 == 'erroNãoBote') {
+        link1 = ''
+    } else {
+        link1 = `<a href="https://${links.url1}" target="_blank">${links.text1}</a>`
+    }
+
+    if (links.text2 == 'erroNãoBote' || links.url2 == 'erroNãoBote') {
+        link2 = ''
+    } else {
+        link2 = `<a href="https://${links.url2}" target="_blank">${links.text2}</a>`
+    }
+
+    if (links.text3 == 'erroNãoBote' || links.url3 == 'erroNãoBote') {
+        link3 = ''
+    } else {
+        link3 = `<a href="https://${links.url3}" target="_blank">${links.text3}</a>`
+    }
+
+    if (links.text4 == 'erroNãoBote' || links.url4 == 'erroNãoBote') {
+        link4 = ''
+    } else {
+        link4 = `<a href="https://${links.url4}" target="_blank">${links.text4}</a>`
+    }
+
+    if (links.text5 == 'erroNãoBote' || links.url5 == 'erroNãoBote') {
+        link5 = ''
+    } else {
+        link5 = `<a href="https://${links.url5}" target="_blank">${links.text5}</a>`
+    }
+
+    if (links.text6 == 'erroNãoBote' || links.url6 == 'erroNãoBote') {
+        link6 = ''
+    } else {
+        link6 = `<a href="https://${links.url6}" target="_blank">${links.text6}</a>`
+    }
+
+    if (links.text7 == 'erroNãoBote' || links.url7 == 'erroNãoBote') {
+        link7 = ''
+    } else {
+        link7 = `<a href="https://${links.url7}" target="_blank">${links.text7}</a>`
+    }
+
+    if (links.text8 == 'erroNãoBote' || links.url8 == 'erroNãoBote') {
+        link8 = ''
+    } else {
+        link8 = `<a href="https://${links.url8}" target="_blank">${links.text8}</a>`
+    }
+
+    if (links.text9 == 'erroNãoBote' || links.url9 == 'erroNãoBote') {
+        link9 = ''
+    } else {
+        link9 = `<a href="https://${links.url9}" target="_blank">${links.text9}</a>`
+    }
+
+    if (links.text10 == 'erroNãoBote' || links.url10 == 'erroNãoBote') {
+        link10 = ''
+    } else {
+        link10 = `<a href="https://${links.url10}" target="_blank">${links.text10}</a>`
+    }
+
+    box.innerHTML = `
+        <h1>${name}</h1>
+        ${link1}
+        ${link2}
+        ${link3}
+        ${link4}
+        ${link5}
+        ${link6}
+        ${link7}
+        ${link8}
+        ${link9}
+        ${link10}
+    `
+    
+    document.documentElement.style.setProperty('--textColor', textColor);
+    document.documentElement.style.setProperty('--backgroundColor', backgroundColor);
+};
+</script>
+
+</body>
+</html>

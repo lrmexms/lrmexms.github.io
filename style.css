@@ -1,0 +1,137 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #0b0f1a;
+    font-family: Consolas, "Courier New", monospace;
+    color: #e6edf3;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: 1px solid #1f2a44;
+
+    background-color: #11162a;
+    color: #e6edf3;
+
+    text-align: center;
+    cursor: pointer;
+    
+    transition: all 0.3s ease
+}
+
+button:hover {
+    background-color: #11162a;
+    color: #22d3ee;
+}
+
+nav#menu {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px, 0px;
+    box-sizing: border-box;
+
+    background-color: #0b0f1a;
+
+    font-family: PublicSans, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+nav#menu ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+nav#menu ul li a,
+nav#menu button a {
+    all: unset;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 5px 10px;
+    border-radius: 10px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: #9aa4bf;
+    font-weight: bold;
+    
+    transition: all 0.3s ease;
+}
+
+nav#menu ul li a:hover,
+nav#menu button a:hover {
+    margin: 0px 20vw;
+    color: #3b82f6;
+}
+
+div#content {
+    width: 100vw;
+    height: calc(100vh - 50px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #0b0f1a;
+    color: #e6edf3;
+}
+
+.box {
+    width: calc(50vw - 40px);
+    height: calc(100vh - 90px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box a {
+
+    text-decoration: none;
+    color: #e6edf3;
+
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 3px;
+
+    border: 1px solid #1f2a44;
+    background-color: #11162a;
+
+    transition: all 0.5s ease;
+    text-align: center;
+    min-width: 35vw;
+}
+
+.box a:hover {
+    color: #0b0f1a;
+    background-color: #3b82f6;
+
+    font-size: 25px;
+    padding: 1vw;
+    margin: 2vw 12vw 2vw 3vw;
+    text-transform: uppercase;
+}
